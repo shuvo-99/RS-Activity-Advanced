@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-5xl my-6">Banking Deatils</h1>
+    </header>
+    <main>
+      <section class="pt-10">
+        <div class="grid grid-cols-3 gap-4 px-8 text-white">
+          <div class="bg-green-500 rounded-md pl-5 py-8">
+            <h1 class="text-4xl mb-2">Deposit</h1>
+            <h1 class="text-4xl">Tk <span id="total_deposit">00</span></h1>
+          </div>
+          <div class="bg-orange-400 rounded-md pl-5 py-8">
+            <h1 class="text-4xl mb-2">Withdraw</h1>
+            <h1 class="text-4xl">Tk <span id="total_withdraw">00</span></h1>
+          </div>
+          <div class="bg-fuchsia-700 rounded-md pl-5 py-8">
+            <h1 class="text-4xl mb-2">Balance</h1>
+            <h1 class="text-4xl">Tk <span id="total_balance">00</span></h1>
+          </div>
+        </div>
+        <br />
+        <div class="grid grid-cols-2 gap-4 px-8">
+          <div class="bg-blue-800 rounded-md pl-5 py-8">
+            <h1 class="text-4xl mb-4 text-white">Enter Amount to Deposit</h1>
+            <input
+              class="w-9/12 rounded py-1"
+              type="text"
+              name=""
+              id="deposit_num"
+              placeholder="Enter the Amount"
+            />
+            <br />
+            <button
+              id="btn_deposit"
+              class="bg-amber-300 py-2 my-2 px-5 rounded"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-teal-700 rounded-md pl-5 py-8">
+            <h1 class="text-4xl mb-4 text-white">Enter Amount to Withdraw</h1>
+            <input
+              class="w-9/12 rounded py-1"
+              type="text"
+              name=""
+              id="withdraw_num"
+              placeholder="Enter the Amount"
+            />
+            <br />
+            <button
+              id="btn_withdraw"
+              class="bg-amber-300 py-2 my-2 px-5 rounded"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/js/bank.js"></script>
+  </body>
+</html>
