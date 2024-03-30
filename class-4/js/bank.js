@@ -1,59 +1,6 @@
 // Step -1: Connect the js page with html page
 console.log("Bank JS page connected");
 
-// ====================================================================
-// ====================================================================
-
-// Step-2: Add click event handler with the  submit btn
-document.getElementById("btn_deposit").addEventListener("click", function () {
-  //   console.log("deposit btn clicked");
-  // Step-3: Get the username inside the username input field
-  // Remeber to use .value to get text from an input field
-  const depositField = document.getElementById("deposit_num");
-  const newDepositAmount = depositField.value;
-  console.log(newDepositAmount);
-
-  // Step-4: Get the current deposit total
-  // for non-input (element other than input, textarea) use innerText to get the text
-  const depositTotalElement = document.getElementById("total_deposit");
-  // place deposit amount on total deposit
-  depositTotalElement.innerText = newDepositAmount;
-
-  // Step-5: Clear the input field
-  depositField.value = "";
-});
-
-// ====================================================================
-// ====================================================================
-
-// Step-2: Add click event handler with the  submit btn
-document.getElementById("btn_deposit").addEventListener("click", function () {
-  // console.log("deposit btn clicked");
-  // Step-3: Get the username inside the username input field
-  // Remeber to use .value to get text from an input field
-  const depositField = document.getElementById("deposit_num");
-  const newDepositAmount = depositField.value;
-  console.log(newDepositAmount);
-
-  // Step-4: Get the current deposit total
-  // for non-input (element other than input, textarea) use innerText to get the text
-  const depositTotalElement = document.getElementById("total_deposit");
-
-  const previousDepositTotal = depositTotalElement.innerText;
-  // console.log(previousDepositTotal);
-
-  const currentDepositTotal = previousDepositTotal + newDepositAmount;
-
-  // place deposit amount on total deposit
-  depositTotalElement.innerText = currentDepositTotal;
-
-  // Step-5: Clear the input field
-  depositField.value = "";
-});
-
-// ====================================================================
-// ====================================================================
-
 // Step-2: Add click event handler with the  deposit btn
 document.getElementById("btn_deposit").addEventListener("click", function () {
   // console.log("deposit btn clicked");
